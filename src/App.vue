@@ -14,10 +14,10 @@
 <div>
     <a-button type="primary" @click="showModal">Open Modal</a-button>
     <a-modal   width="1048px"  v-model:visible="visible" title="Basic Modal" @ok="handleOk">
-    <a-tabs v-model:activeKey="activeKey">
-      <a-tab-pane key="1" tab="Tab 1" class="text-right">Content of Tab Pane 1</a-tab-pane>
-      <a-tab-pane key="2" tab="Tab 2" class="text-right" force-render>Content of Tab Pane 2</a-tab-pane>
-      <a-tab-pane key="3" tab="Tab 3" class="text-right">Content of Tab Pane 3</a-tab-pane>
+    <a-tabs v-model:activeKey="activeKey" >
+      <a-tab-pane key="1" tab="علی" class="text-right">پوریا</a-tab-pane>
+      <a-tab-pane key="2" tab="محمد" class="text-right" force-render>محمد</a-tab-pane>
+      <a-tab-pane key="3" tab="پوریا" class="text-right">مریم</a-tab-pane>
       <template #renderTabBar="{ DefaultTabBar, ...props }">
         <component
           :is="DefaultTabBar"
